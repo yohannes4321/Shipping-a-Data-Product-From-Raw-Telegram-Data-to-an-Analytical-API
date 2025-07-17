@@ -1,5 +1,5 @@
 # Shipping-a-Data-Product-From-Raw-Telegram-Data-to-an-Analytical-API
-# Shipping a Data Product: From Raw Telegram Data to an Analytical API
+
 
 An end-to-end data platform that transforms raw Telegram data into actionable business insights using modern data tools like **Telethon**, **dbt**, **YOLOv8**, **FastAPI**, and **Dagster**.
 
