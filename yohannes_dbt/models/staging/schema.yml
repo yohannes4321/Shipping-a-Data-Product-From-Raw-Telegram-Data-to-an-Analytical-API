@@ -1,0 +1,8 @@
+
+version: 2
+
+sources:
+  - name: yohannes_schema   # matches your schema name
+    schema: yohannes_schema
+    tables:
+      - name: tellegram_data

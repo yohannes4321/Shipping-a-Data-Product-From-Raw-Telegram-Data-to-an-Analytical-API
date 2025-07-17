@@ -1,0 +1,37 @@
+version: 2
+models:
+  - name: dim_channels
+    description: "dimension channels"
+    columns:
+     - name: channel
+       description: "The name of the channel"
+       tests:
+        - not_null
+        - unique
+  - name: dim_dates
+    description: "dimension dates"
+    columns:
+     - name: message_date
+       description: "The date of the message"
+       tests:
+        - not_null
+     - name: year
+       description: "The year of the message date"
+       tests:
+        - not_null
+     - name: month
+       description: "The month of the message date"
+       tests:
+        - not_null
+     - name: month_name
+       description: "The name of the month of the message date"
+       tests:
+        - not_null
+     - name: day
+       description: "The day of the message date"
+       tests:
+        - not_null
+     - name: day_of_week
+       description: "The day of the week of the message date"
+       tests:
+        - not_null

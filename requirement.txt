@@ -1,0 +1,16 @@
+telethon
+python-dotenv
+pandas
+emoji
+psycopg2-binary
+fastapi
+uvicorn[standard]
+pyyaml
+requests
+dbt-core
+ultralytics
+ fastapi 
+ uvicorn[standard]
+ dagster
+ dagster-webserver
+ dagster-dg-cli

@@ -1,0 +1,63 @@
+version : 2
+sources:
+  - name: yohannes_schema
+    schema: yohannes_schema
+    tables: 
+      - name: yolo_images
+models:
+  - name: fct_message
+    description: "fact messages"
+    columns:
+   
+      - name : message_id
+        description: 'the message id '
+        tests: 
+          - not_null;
+          - unique 
+      - name: channel
+        description: "The channel from which the message was sent"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_channels')
+              field: channel
+      - name: message_date
+        description: "The date and time when the message was sent"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_dates')
+              field: message_date
+      - name: description
+        description: "The content of the message"
+        tests:
+          - not_null  
+     
+
+      - name : has_image
+        description: "Indicates if the message contains an image"
+        tests:
+          - not_null
+
+
+  - name : fct_image_detections
+    description : YOLO detection image
+    columns: 
+      - name : message_id
+        description: 'the message id '
+        tests: 
+          - not_null;
+          - unique 
+      - name : class_name
+        description: class_name of object in image
+        tests:
+          - not_null
+      - name : confidence
+        description : confidence level of image
+        tests:
+          - not_null
+
+  
+      
+    
+              
