@@ -6,7 +6,8 @@ Fraud detection is an essential aspect of financial technology, especially withi
 
 Adey Innovations Inc. has prioritized the development of a robust fraud detection system to combat these challenges. This project aims to build a reliable detection framework to secure e-commerce and banking transactions, protecting customers and reducing potential losses for financial institutions. This solution will contribute not only to enhanced financial security but also to reinforcing the trust of customers in digital financial services. 
 ## 📊 Visualizations & Analysis
-![Data Preview](plot/ChatGPT Image Jul 26, 2025, 11_49_52 PM.png)
+![ChatGPT Data Preview](plot/chatgpt_image_jul26_2025_11_49_52_pm.png)
+
 
 ### 📌 Data Preview
 ![Data Preview](plot/data.png)
